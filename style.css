@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-top {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #272a31;
+  transition:all 0.25s ease;
+}
+
+a:hover {
+  color: #ec5242;
+}
+
+.introduction {
+  padding: 5% 0 0 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  font-family: 'Lato',sans-serif;
+}
+
+.introduction h1 {
+  color: #ec5242;
+}
+
+.intro-header {
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.intro-description {
+  font-size: 15px;
+  color:#272a31;
+}
+
+details {
+  font-size: 25px;
+  font-weight: bold;
+  color: #272a31;
+}
+
+section.main {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+.main > h1 {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #ec5242;
+}
+
+.main > p {
+  border-bottom: 1px solid #d3d3d3;
+  color: #d3d3d3;
+}
+
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  color: #d3d3d3;
+  background-color: rgba(39, 42, 49, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  border: 1px solid #fff;
+}
+
+figcaption {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color:#ec5242;
+}
