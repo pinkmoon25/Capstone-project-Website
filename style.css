@@ -12,6 +12,10 @@ header {
   align-items: center;
 }
 
+button.hamburger {
+  display: none;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -60,6 +64,7 @@ a > img {
 
 .intro-description {
   font-size: 15px;
+  font-weight: 600;
   color:#272a31;
 }
 
@@ -95,6 +100,10 @@ h1 > hr {
   color: #d3d3d3;
 }
 
+button.join {
+  display: none;
+}
+
 div.cards {
   display: flex;
   flex-wrap: wrap;
@@ -114,6 +123,7 @@ div.cards {
   text-align: center;
   color: #d3d3d3;
   background-color: rgba(39, 42, 49, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.8) 8px 8px 5px;;
   transition: all 0.3s ease-in-out;
 }
 
@@ -169,6 +179,10 @@ figcaption {
   color:#272a31;
 }
 
+button.more {
+  display: none;
+}
+
 .feedback {
   padding: 30px;
   font-family: 'Lato', sans-serif;
@@ -197,7 +211,7 @@ figcaption {
   35% {margin-top: 0px;}
   70%{margin-top: -75px;}
   75%{margin-top: -75px;}
-  100% {margin-top: -120px;}
+  100% {margin-top: -116px;}
 }
 
 .slider > *:hover {
@@ -213,4 +227,91 @@ footer{
   font-family: 'Lato', sans-serif;
   color: #272a31;
   background-color: #d3d3d3;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+
+.intro-header {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.introduction {
+  width: 100vw;
+  height: 100vh;
+  padding: 12px;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+button.hamburger {
+  display: block;
+  align-self: baseline;
+  border: none;
+  font-size: 35px;
+}
+
+.card {
+  width: 90%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.main > p {
+  display: none;
+}
+
+button.join {
+  display: block;
+  padding: 18px;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ec5242;
+}
+
+.technologies {
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 30px;
+}
+
+.technologies > h1 {
+  grid-column: auto;
+}
+
+.tech-cards {
+  flex-wrap: nowrap;
+}
+
+.js, .ruby, .dbms, .git {
+  display: none;
+}
+
+button.more {
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #272a31;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+}
+
+.more > span {
+  font-size: large;
+  color: #ec5242;
+}
+
+.feedback, footer {
+  display: none;
+}
 }
