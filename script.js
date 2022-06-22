@@ -1,24 +1,24 @@
-//Mobile-menu Popup
+// Mobile-menu Popup
 const menu = document.querySelector('header.mobile');
 const openMenu = document.querySelector('.hamburger');
 const menuLinks = document.querySelector('.links');
 const closeMenu = document.querySelector('.close-menu');
 
-function show(){
+function show() {
   menu.style.display = 'flex';
 }
 
-function close(){
+function close() {
   menu.style.display = 'none';
 }
 
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
-for(let i=0; i<menuLinks.length; i += 1) {
+for (let i = 0; i < menuLinks.length; i += 1) {
   menuLinks[i].addEventListener('click', close);
 }
 
-//dynamic html section
+// dynamic html section
 
 const techSection = document.querySelector('.technologies');
 const moreBtn = document.querySelector('.more');
@@ -65,14 +65,14 @@ const techDetails = [
     description: 'Learn about git the Version control system and github which provides internet hosting and many other features by using git.',
     imageSrc: 'images/github-square-brands.svg',
     imageAlt: 'An icon of octocat representing Github',
-  }
+  },
 ];
 
-function addTechnology(){
-  for(let i=0; i<techDetails.length; i += 1){
+function addTechnology() {
+  for (let i = 0; i < techDetails.length; i += 1) {
     const divCard = document.createElement('div');
     divCard.classList.add('tech-cards');
-    
+
     const image = document.createElement('img');
     image.setAttribute('src', `${techDetails[i].imageSrc}`);
     image.setAttribute('alt', `${techDetails[i].imageAlt}`);
@@ -97,22 +97,17 @@ function addTechnology(){
     para.textContent = `${techDetails[i].description}`;
     divDetails.appendChild(para);
 
-    if(i === 0){
+    if (i === 0) {
       divCard.classList.add('html');
-    }
-    else if(i === 1){
+    } else if (i === 1) {
       divCard.classList.add('css');
-    }
-    else if(i === 2){
+    } else if (i === 2) {
       divCard.classList.add('js');
-    }
-    else if(i === 3){
+    } else if (i === 3) {
       divCard.classList.add('dbms');
-    }
-    else if(i === 4){
+    } else if (i === 4) {
       divCard.classList.add('ruby');
-    }
-    else if(i === 5){
+    } else if (i === 5) {
       divCard.classList.add('git');
     }
 
