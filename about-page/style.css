@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body, * {
+body,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,7 +32,11 @@ ul {
 a {
   text-decoration: none;
   color: #272a31;
-  transition:all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+address > a {
+  border-bottom: 2px solid #272a31;
 }
 
 a:hover {
@@ -42,6 +47,15 @@ a > img {
   width: 100px;
   height: 80px;
   transition: all 0.3s ease;
+}
+
+figure > img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.logo-container > img {
+  width: 80%;
 }
 
 a > img:hover {
@@ -68,7 +82,7 @@ a > img:hover {
 .introduction > h1 {
   font-weight: bold;
   font-size: 72px;
-  color:#ec5242;
+  color: #ec5242;
 }
 
 hr {
@@ -83,7 +97,7 @@ hr {
   border: 2px solid #d3d3d3;
 }
 
-.intro-description.mobile{
+.intro-description.mobile {
   display: none;
 }
 
@@ -95,10 +109,6 @@ address {
   align-items: center;
   gap: 10px;
   font-weight: bold;
-}
-
-address > a {
-  border-bottom: 2px solid #272a31;
 }
 
 address > i {
@@ -125,10 +135,6 @@ section.logo {
   text-align: center;
 }
 
-.logo-container > img {
-  width: 80%;
-}
-
 section.members {
   padding: 35px 0;
   display: flex;
@@ -153,16 +159,11 @@ figure {
   background-color: #ec5242;
 }
 
-figure > img {
-  width: 100%;
-  opacity: 0.5;
-}
-
 .feedback {
   display: none;
 }
 
-footer{
+footer {
   padding: 35px 0;
   display: flex;
   align-items: center;
@@ -174,7 +175,7 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-  header{
+  header {
     display: none;
   }
 
@@ -239,7 +240,7 @@ footer{
     display: none;
   }
 
-  .intro-description.mobile{
+  .intro-description.mobile {
     display: block;
     width: 100%;
     padding: 12px;
@@ -252,7 +253,7 @@ footer{
     gap: 24px;
   }
 
-  .logo-description{
+  .logo-description {
     display: none;
   }
 
@@ -285,7 +286,7 @@ footer{
     color: #d3d3d3;
     background-color: #272a31;
   }
-  
+
   .feedback > hr {
     margin: 8px auto;
   }
@@ -295,7 +296,7 @@ footer{
     overflow: hidden;
     font-weight: 600;
   }
-  
+
   .slider > * {
     height: 100%;
     margin-bottom: 90px;
@@ -304,24 +305,24 @@ footer{
     animation: slide 10s infinite;
     animation-timing-function: ease-in-out;
   }
-  
+
   .slider > *:hover {
     animation-play-state: paused;
   }
 
   @keyframes slide {
-    0% {margin-top:80px;}
-    30% {margin-top: 0px;}
-    35% {margin-top: 0px;}
-    70%{margin-top: -95px;}
-    75%{margin-top: -95px;}
-    100% {margin-top: -145px;}
+    0% { margin-top: 80px; }
+    30% { margin-top: 0; }
+    35% { margin-top: 0; }
+    70% { margin-top: -95px; }
+    75% { margin-top: -95px; }
+    100% { margin-top: -145px; }
   }
 
   footer {
     padding: 25px 16px;
     gap: 15px;
-    color:#272a31;
+    color: #272a31;
     background-color: #fff;
   }
 }
