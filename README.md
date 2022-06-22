@@ -6,10 +6,10 @@
 Many Thanks to [Cindy Shin in Behance](https://www.behance.net/adagio07) for the original design idea.
 
 Thanks to the following people and Unsplash for the images: 
-Photo by [Leone Venter](https://unsplash.com/es/@fempreneurstyledstock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-Photo by [Keith Misner](https://unsplash.com/@keithmisner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/background-image-pattern-education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-Photo by [Windows](https://unsplash.com/@windows?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/group-of-people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-Photo by [Christina @ wocintechchat.com](https://unsplash.com/es/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/group-of-people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Leone Venter](https://unsplash.com/es/@fempreneurstyledstock?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Photo by [Keith Misner](https://unsplash.com/@keithmisner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/background-image-pattern-education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Photo by [Windows](https://unsplash.com/@windows?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/group-of-people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Photo by [Christina @ wocintechchat.com](https://unsplash.com/es/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/group-of-people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 
 ## Built With
 
@@ -20,7 +20,7 @@ Photo by [Christina @ wocintechchat.com](https://unsplash.com/es/@wocintechchat?
 
 ## Live Demo 
 
-You can see the website here :point_right: [live](https://pinkmoon25.github.io/Capstone-project-Website/) 
+You can see the website here :point_right: [devHome](https://pinkmoon25.github.io/Capstone-project-Website/) 
 
 
 ## Authors
