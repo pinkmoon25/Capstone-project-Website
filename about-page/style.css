@@ -13,6 +13,10 @@ header {
   align-items: center;
 }
 
+header.mobile {
+  display: none;
+}
+
 button.hamburger {
   display: none;
 }
@@ -21,6 +25,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 50px;
+  font-weight: 600;
 }
 
 a {
@@ -36,6 +41,11 @@ a:hover {
 a > img {
   width: 100px;
   height: 80px;
+  transition: all 0.3s ease;
+}
+
+a > img:hover {
+  transform: skew(20deg) scale(1.1);
 }
 
 .introduction {
@@ -168,6 +178,39 @@ footer{
     display: none;
   }
 
+  header.mobile {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #d3d3d3;
+    opacity: 0.9;
+    font-family: 'Lato', sans-serif;
+    color: #272a31;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav.mobile-menu {
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .mobile-menu.links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: #272a31;
+    text-underline-offset: 1px;
+  }
+
   .introduction > h1 {
     font-size: 45px;
   }
@@ -177,6 +220,13 @@ footer{
     align-self: baseline;
     border: none;
     font-size: 35px;
+  }
+
+  button.close-menu {
+    padding: 20px;
+    border: none;
+    font-size: 35px;
+    background-color: inherit;
   }
 
   .introduction {
@@ -228,6 +278,7 @@ footer{
   }
 
   .feedback {
+    display: block;
     padding: 35px 16px;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -251,8 +302,13 @@ footer{
     padding-top: 15px;
     transition: all 0.3s ease;
     animation: slide 10s infinite;
+    animation-timing-function: ease-in-out;
   }
   
+  .slider > *:hover {
+    animation-play-state: paused;
+  }
+
   @keyframes slide {
     0% {margin-top:80px;}
     30% {margin-top: 0px;}
