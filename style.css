@@ -5,6 +5,7 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -53,7 +54,6 @@ a > img:hover {
 }
 
 .introduction {
-  width: 99vw;
   height: 100vh;
   padding-left: 15%;
   display: flex;
@@ -88,6 +88,7 @@ a > img:hover {
 }
 
 details {
+  width: max-content;
   font-size: 25px;
   font-weight: bold;
   color: #272a31;
@@ -221,8 +222,8 @@ button.more {
   margin-bottom: 80px;
   padding-top: 15px;
   transition: all 0.3s ease;
-  animation: slide 10s infinite;
-  animation-timing-function: ease-in-out;
+  animation: slide 15s infinite;
+  animation-timing-function: ease;
 }
 
 @keyframes slide {
@@ -282,9 +283,6 @@ footer {
     align-items: center;
     gap: 30px;
     font-size: 25px;
-    text-decoration: underline;
-    text-decoration-color: #272a31;
-    text-underline-offset: 1px;
   }
 
   .intro-header {
@@ -293,7 +291,6 @@ footer {
   }
 
   .introduction {
-    width: 100vw;
     height: 100vh;
     box-sizing: content-box;
     padding: 12px;

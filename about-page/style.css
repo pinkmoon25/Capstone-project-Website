@@ -302,8 +302,8 @@ footer {
     margin-bottom: 90px;
     padding-top: 15px;
     transition: all 0.3s ease;
-    animation: slide 10s infinite;
-    animation-timing-function: ease-in-out;
+    animation: slide 15s infinite;
+    animation-timing-function: ease;
   }
 
   .slider > *:hover {
