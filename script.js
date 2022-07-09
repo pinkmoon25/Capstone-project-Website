@@ -110,7 +110,7 @@ function addTechnology() {
     } else if (i === 5) {
       divCard.classList.add('git');
     }
-
+    if(techSection === null) return;
     techSection.insertBefore(divCard, moreBtn);
     let seeMore = false;
     moreBtn.addEventListener('click', ()=>{
