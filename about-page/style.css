@@ -292,18 +292,17 @@ footer {
   }
 
   .slider {
-    height: 100px;
+    height: 150px;
     overflow: hidden;
     font-weight: 600;
   }
 
   .slider > * {
     height: 100%;
-    margin-bottom: 90px;
-    padding-top: 15px;
+    margin-bottom: 35px;
     transition: all 0.3s ease;
     animation: slide 15s infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
   }
 
   .slider > *:hover {
@@ -311,12 +310,13 @@ footer {
   }
 
   @keyframes slide {
-    0% { margin-top: 80px; }
-    30% { margin-top: 0; }
-    35% { margin-top: 0; }
-    70% { margin-top: -95px; }
-    75% { margin-top: -95px; }
-    100% { margin-top: -145px; }
+    0% { margin-top: 150px; }
+    20% { margin-top: 40px; }
+    40% { margin-top: 40px; }
+    60% { margin-top: -75px; }
+    80% { margin-top: -75px; }
+    90% { margin-top: -150px; }
+    100% { margin-top: -225px; }
   }
 
   footer {

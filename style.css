@@ -9,9 +9,13 @@ body,
 }
 
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: rgb(255, 255, 255, 0.8);
 }
 
 header.mobile {
@@ -40,8 +44,7 @@ a:hover {
 }
 
 a > img {
-  width: 100px;
-  height: 80px;
+  width: 75px;
   transition: all 0.3s ease;
 }
 
@@ -54,6 +57,7 @@ a > img:hover {
 }
 
 .introduction {
+  margin-top: 75px;
   height: 100vh;
   padding-left: 15%;
   display: flex;
@@ -116,8 +120,7 @@ h1 > hr {
 
 .main > p {
   border-bottom: 1px solid #d3d3d3;
-  font-weight: 600;
-  color: #d3d3d3;
+  font-weight: 700;
 }
 
 button.join {
@@ -291,6 +294,7 @@ footer {
   }
 
   .introduction {
+    margin: 0;
     height: 100vh;
     box-sizing: content-box;
     padding: 12px;
@@ -359,10 +363,7 @@ footer {
     flex-wrap: nowrap;
   }
 
-  .js,
-  .ruby,
-  .dbms,
-  .git {
+  .js, .ruby, .dbms, .git {
     display: none;
   }
 
@@ -373,9 +374,20 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    border: 1px solid #d3d3d3;
+    font-size: inherit;
     color: #272a31;
     background: #fff;
-    border: 1px solid #d3d3d3;
+    transition: 0.3s ease;
+  }
+
+  button.more:hover {
+    background-color: #ec5242;
+    color: #fff;
+  }
+
+  button.more:hover span {
+    color: #fff;
   }
 
   .more > span {
@@ -385,6 +397,33 @@ footer {
 
   .feedback,
   footer {
-    display: none;
+    padding: 15px 12px;
+  }
+
+  .slider {
+    height: 150px;
+    overflow: hidden;
+    font-weight: 600;
+  }
+
+  .slider > * {
+    height: 100%;
+    margin-bottom: 55px;
+    transition: all 0.3s ease;
+    animation: slide 15s infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .slider > *:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes slide {
+    0% { margin-top: 150px; }
+    20% { margin-top: 20px; }
+    40% { margin-top: 20px; }
+    60% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    100% { margin-top: -200px; }
   }
 }
