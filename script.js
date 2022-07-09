@@ -112,6 +112,24 @@ function addTechnology() {
     }
 
     techSection.insertBefore(divCard, moreBtn);
+    let seeMore = false;
+    moreBtn.addEventListener('click', ()=>{
+      if(!seeMore){
+        document.querySelector('.js').style.display = 'flex';
+        document.querySelector('.dbms').style.display = 'flex';
+        document.querySelector('.ruby').style.display = 'flex';
+        document.querySelector('.git').style.display = 'flex';
+        moreBtn.innerHTML = `See Less<span><i class="fa-solid fa-angle-up"></i></span>`
+      }
+      else{
+        document.querySelector('.js').style.display = 'none';
+        document.querySelector('.dbms').style.display = 'none';
+        document.querySelector('.ruby').style.display = 'none';
+        document.querySelector('.git').style.display = 'none';
+        moreBtn.innerHTML = `See More<span><i class="fa-solid fa-angle-down"></i></span>`
+      }
+      seeMore = !seeMore;
+    });
   }
 }
 
