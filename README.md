@@ -1,6 +1,6 @@
 # devHome website
 
-For this Capstone project, I have built a web-development course website based on [these design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
+A responsive web-development course website based on [these design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 ## Built With
 
